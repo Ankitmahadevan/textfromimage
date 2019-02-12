@@ -9,7 +9,9 @@ verify_ssl = true
 django = "==2.1"
 pillow = "*"
 pytesseract = "*"
-gunicorn = "==19.8.1"
 
 [requires]
 python_version = "3.7"
+django = "==2.1"
+pillow = "*"
+pytesseract = "*"
