@@ -2,7 +2,7 @@
 {% extends 'base.html'%} 
 
 {% block content %}
- <div class="jumbotron jumbotron-fluid" style="text-align:center; margin-top:5px;>
+ <div class="jumbotron jumbotron-fluid" style="text-align:center; margin-top:5px;">
   <div class="container">
     <h1 class="display-4" style="text-align:center;">Upload Image Here</h1>
     
@@ -10,9 +10,8 @@
 </div>
     <div style="text-align:center; margin-top:100px;">
     <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
-      {{ form.photo  }}
+      {{ form.as_p  }}
       <input type="submit" class="btn btn-primary" value="Upload" />
     </form>
   </div>
-
 {% endblock content %}
